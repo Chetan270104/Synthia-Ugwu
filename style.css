@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'general sans';
+}
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    scrollbar-width: none;
+}
+
+.minicircle {
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 0.3s;
+    height: 8px;
+    width: 8px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    z-index: 99999;
+}
+
+main {
+    width: 100vw;
+    /* cursor:default; */
+    background-color: black;
+}
+
+main #hero {
+    max-width: 100%;
+    width: 100%;
+    color: white;
+    height: 100vh;
+    background-color: black;
+    position: relative;
+}
+
+main #hero nav {
+    padding: 2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.1rem;
+}
+
+#heading {
+    margin-top: 40px;
+}
+
+#heading h1 {
+    font-family: 'general sans regular';
+    opacity: .6;
+    font-size: 9.5vw;
+    line-height: 1;
+    margin-left: 1.5rem;
+    font-weight: 700;
+}
+
+.bounding {
+    width: fit-content;
+    /* background-color: red; */
+    overflow: hidden;
+}
+
+.boundingelem {
+    transform: translateY(100%);
+}
+
+#heading .blocktext {
+    width: fit-content;
+    /* background: blue; */
+    margin-left: 100px;
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#heading .blocktext h4 {
+    text-align: right;
+    margin-top: 6px;
+    /* background-color: yellow;  */
+}
+
+#hero .heading2 {
+    margin-top: 180px;
+    text-align: right;
+    padding-right: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+#hero .heading2 h5 {
+    font-size: 1.4vw;
+}
+
+#hero .herofooter {
+    position: absolute;
+    bottom: 2%;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1.5rem;
+}
+
+#hero .herofooter a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+#hero .herofooter .circles {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 5px;
+}
+
+#hero .herofooter .circle {
+    height: 25px;
+    width: 25px;
+    background-color: #888;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+#secondpage {
+    min-height: 100vh;
+    max-width: 100%;
+    width: 100%;
+    background-color: black;
+    padding-top: 170px;
+}
+
+#secondpage .elem {
+    width: 90%;
+    height: 50%;
+    /* background-color: aqua; */
+    margin-left: 1.5rem;
+}
+
+#secondpage .elem .box {
+    padding: 4vw 0;
+    border-top: 1px solid #888;
+    /* border-bottom: 2px solid white; */
+    font-size: 3vw;
+    font-weight: 800;
+    font-family: 'general sans regular';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: .7;
+    color: white;
+    position: relative;
+}
+
+#secondpage .elem .box p {
+    font-size: 1rem;
+    font-family: 'general sans regular';
+    opacity: 1.5;
+}
+
+#secondpage .elem #box-somos {
+    border-bottom: 1px solid #888;
+}
+
+.elem .box img {
+    height: 130%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.elem .box img .box-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#about {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    /* width: 60vw; */
+    justify-content: center;
+    margin: auto;
+    gap: 50px;
+    padding: 10vw 5vw 10vw 20vw;
+}
+
+#about img {
+    height: 250px;
+    /* width: 30%; */
+}
+
+#about img .about-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#about .about-text {
+    width: 70%;
+}
+
+#about .about-text h5 {
+    opacity: .7;
+    margin-bottom: 8px;
+}
+
+#about .about-text p {
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+#about .about-text a {
+    padding: 6px 14px;
+    border: 1px solid #888;
+    text-decoration: none;
+    border-radius: 15px;
+    color: white;
+}
+
+#subscribe {
+    color: #fff;
+    padding: 0 1.5rem 2rem 1.5rem;
+}
+
+
+#subscribe p {
+    opacity: .7;
+    font-size: 1.3vw;
+}
+
+.mainfooter {
+    color: #fff;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mainfooter .footer-left {
+    display: flex;
+    gap: 20px;
+}
+
+.mainfooter .footer-right {
+    display: flex;
+    gap: 28px;
+}
+
+.mainfooter .footer-right a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.7vw;
+    font-weight: 700;
+    /* text-size-adjust: 0.8; */
+}
